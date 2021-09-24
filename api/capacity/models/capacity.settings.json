@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "capacities",
+  "info": {
+    "name": "capacity"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "guests": {
+      "type": "integer"
+    }
+  }
+}

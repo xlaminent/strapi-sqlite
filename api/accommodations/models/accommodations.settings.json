@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "messages",
+  "collectionName": "accommodations",
   "info": {
-    "name": "message",
+    "name": "Accommodations",
     "description": ""
   },
   "options": {
@@ -11,21 +11,14 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "email": {
-      "type": "email"
-    },
-    "name": {
+    "item_name": {
       "type": "string"
     },
-    "message": {
-      "type": "text"
+    "item_quantity": {
+      "type": "integer"
     },
-    "subject": {
+    "item_slug": {
       "type": "string"
-    },
-    "read": {
-      "type": "boolean",
-      "default": false
     }
   }
 }

@@ -1,0 +1,111 @@
+{
+  "kind": "collectionType",
+  "collectionName": "establishments",
+  "info": {
+    "name": "establishment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "default_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "type": {
+      "type": "string"
+    },
+    "short_description": {
+      "type": "text"
+    },
+    "availability": {
+      "type": "boolean",
+      "default": false
+    },
+    "long_description": {
+      "type": "text"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "integer"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "store": {
+      "type": "boolean",
+      "default": false
+    },
+    "pet_friendly": {
+      "type": "boolean",
+      "default": false
+    },
+    "rental_services": {
+      "type": "boolean",
+      "default": false
+    },
+    "concierge": {
+      "type": "boolean",
+      "default": false
+    },
+    "room_service": {
+      "type": "boolean",
+      "default": false
+    },
+    "playroom": {
+      "type": "boolean",
+      "default": false
+    },
+    "spa": {
+      "type": "boolean",
+      "default": false
+    },
+    "gym": {
+      "type": "boolean",
+      "default": false
+    },
+    "pool": {
+      "type": "boolean",
+      "default": false
+    },
+    "tanning_lounge": {
+      "type": "boolean",
+      "default": false
+    },
+    "library": {
+      "type": "boolean",
+      "default": false
+    },
+    "rooms": {
+      "collection": "room"
+    }
+  }
+}

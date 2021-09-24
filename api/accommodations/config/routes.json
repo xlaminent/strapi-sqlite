@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/accommodations",
+      "handler": "accommodations.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/accommodations/count",
+      "handler": "accommodations.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/accommodations/:id",
+      "handler": "accommodations.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/accommodations",
+      "handler": "accommodations.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/accommodations/:id",
+      "handler": "accommodations.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/accommodations/:id",
+      "handler": "accommodations.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

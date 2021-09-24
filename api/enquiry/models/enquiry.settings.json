@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "messages",
+  "collectionName": "enquiries",
   "info": {
-    "name": "message",
+    "name": "enquiry",
     "description": ""
   },
   "options": {
@@ -11,21 +11,32 @@
     "draftAndPublish": true
   },
   "attributes": {
+    "name": {
+      "type": "string"
+    },
     "email": {
       "type": "email"
     },
-    "name": {
+    "number": {
+      "type": "biginteger"
+    },
+    "type": {
+      "type": "string"
+    },
+    "subject": {
       "type": "string"
     },
     "message": {
       "type": "text"
     },
-    "subject": {
+    "establishment_name": {
       "type": "string"
     },
-    "read": {
-      "type": "boolean",
-      "default": false
+    "establishment_id": {
+      "type": "integer"
+    },
+    "company_name": {
+      "type": "string"
     }
   }
 }
